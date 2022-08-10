@@ -13,8 +13,8 @@
     <p>Se puede probar esta página eligiendo dos sombras del archivo <a target="_blank"
             href="ejemplos2.txt">ejemplos2.txt</a>,
         o bien tres de <a target="_blank" href="ejemplos3.txt">ejemplos3.txt</a> o bien cuatro de
-        <a target="_blank" href="ejemplos4.txt">ejemplos 4.txt</a>. El hecho de que el mensaje descifrado con 
-        menos sombras de las necesarias se parezca más o menos al correcto depende del cuidado que se haya puesto al 
+        <a target="_blank" href="ejemplos4.txt">ejemplos 4.txt</a>. El hecho de que el mensaje descifrado con
+        menos sombras de las necesarias se parezca más o menos al correcto depende del cuidado que se haya puesto al
         elegir un polinomio para cifrar y obtener a partir de él las sombras. Esto
         no se ha cuidado especialmente al hacer los archivos de ejemplo. </p>
 
@@ -44,19 +44,27 @@
                     <div id="mensaje" class="input-control"></div>
                 </div>
             </div>
-            
+
             <table style="margin-left: auto; margin-right: auto;">
                 <tr>
                     <td>Está página ha sido realizada por Raúl Romero.</td>
                     <td><a href='https://ko-fi.com/L3L8EBD2A' target='_blank'>
-                            <img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=3'
-                                border='0' alt='Buy Me a Coffee at ko-fi.com' /></a></td>
+                            <img height='36' style='border:0px;height:36px;'
+                                src='https://cdn.ko-fi.com/cdn/kofi2.png?v=3' border='0'
+                                alt='Buy Me a Coffee at ko-fi.com' /></a></td>
                 </tr>
             </table>
     </section>
     <script src="app.js"></script>
-    
-
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('raulromero', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Café',
+            'floating-chat.donateButton.background-color': '#5bc0de',
+            'floating-chat.donateButton.text-color': '#323842'
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Decodficación de un mensaje</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.21.0/full/pyodide.js"></script>
+</head>
+
+<body>
+    <h1>Descodificación de mensajes</h1>
+    <p>Se puede probar esta página eligiendo dos sombras del archivo <a target="_blank"
+            href="ejemplos2.txt">ejemplos2.txt</a>,
+        o bien tres de <a target="_blank" href="ejemplos3.txt">ejemplos3.txt</a> o bien cuatro de
+        <a target="_blank" href="ejemplos4.txt">ejemplos 4.txt</a>. El hecho de que el mensaje descifrado con 
+        menos sombras de las necesarias se parezca más o menos al correcto depende del cuidado que se haya puesto al 
+        elegir un polinomio para cifrar y obtener a partir de él las sombras. Esto
+        no se ha cuidado especialmente al hacer los archivos de ejemplo. </p>
+
+    <section class="form-main">
+        <div class="form-content">
+            <div class="box">
+                <h3>Introduzca las sombras con las que quiere descodificar de una en una:</h3>
+
+                <div class="input-box">
+                    <textarea class="input-control" id="txtSombra" placeholder="Ejemplo: (23, 1489)"></textarea>
+                    <button id="cargar" class="btn" style="display: none;">Cargar sombra</button>
+                </div>
+            </div>
+
+            <div id="box-cargadas" class="box" style="display: none;">
+                <h3>Compendio de sombras cargadas</h3>
+                <div class="input-box">
+                    <div id="cargadas" class="input-control">[]</div>
+                    <button class="btn" id="reset">Limpiar sombras cargadas</button>
+                    <button class="btn" id="desvelar">Descodificar el mensaje</button>
+                </div>
+            </div>
+
+            <div class="box" id="box-mensaje" style="display: none;">
+                <h3>Mensaje descodificado</h3>
+                <div class="input-box">
+                    <div id="mensaje" class="input-control"></div>
+                </div>
+            </div>
+            
+            <table style="margin-left: auto; margin-right: auto;">
+                <tr>
+                    <td>Está página ha sido realizada por Raúl Romero.</td>
+                    <td><a href='https://ko-fi.com/L3L8EBD2A' target='_blank'>
+                            <img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=3'
+                                border='0' alt='Buy Me a Coffee at ko-fi.com' /></a></td>
+                </tr>
+            </table>
+    </section>
+    <script src="app.js"></script>
+    
+
+</body>
+
+</html>
